@@ -2,7 +2,19 @@
  * Created by sergi.castillo on 8/3/17.
  */
 public class TicTacToe {
+
+    boolean[][] isFree = new boolean[3][3];
+
+    public TicTacToe() {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                isFree[i][j] = true;
+            }
+        }
+    }
+
     public boolean print() {
+
         return true;
     }
 
@@ -15,6 +27,6 @@ public class TicTacToe {
     }
 
     public boolean checkPosition(int x, int y) {
-        return true;
+        return isFree[x][y];
     }
 }
