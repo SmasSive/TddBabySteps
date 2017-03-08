@@ -21,10 +21,10 @@ public class TicTacToeShould {
     @Test
     public void print_first_movement() throws Exception {
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] position = new int[1][1];
-        position[0][0] = 0;
+        int x = 0;
+        int y = 0;
 
-        Token.Type token = ticTacToe.print(position);
+        Token.Type token = ticTacToe.print(x,y);
 
         assertThat(token, is(Token.Type.CROSS));
 
@@ -33,10 +33,10 @@ public class TicTacToeShould {
     @Test
     public void print_second_movement() throws Exception {
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] position = new int[1][1];
-        position[0][0] = 1;
+        int x = 0;
+        int y = 1;
 
-        Token.Type token = ticTacToe.print(position);
+        Token.Type token = ticTacToe.print(x,y);
 
         assertThat(token, is(Token.Type.CIRCLE));
 
@@ -46,8 +46,8 @@ public class TicTacToeShould {
     public void check_position() throws Exception {
         TicTacToe ticTacToe = new TicTacToe();
         int[][] position = new int[1][1];
-boolean check=        ticTacToe.checkPosition(position);
-        assertThat(check,is(true));
+        boolean check = ticTacToe.checkPosition(position);
+        assertThat(check, is(true));
 
     }
 }
