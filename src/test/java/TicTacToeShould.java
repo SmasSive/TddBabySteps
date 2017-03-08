@@ -27,4 +27,14 @@ public class TicTacToeShould {
         assertThat(token, is(Token.Type.CROSS));
 
     }
+
+    @Test
+    public void print_second_movement() throws Exception {
+        TicTacToe ticTacToe = new TicTacToe();
+
+        Token.Type token = ticTacToe.print(1);
+
+        assertThat(token, is(Token.Type.CIRCLE));
+
+    }
 }

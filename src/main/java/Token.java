@@ -4,6 +4,6 @@
 public class Token {
 
     public enum Type {
-        CROSS
+        CIRCLE, CROSS
     }
 }

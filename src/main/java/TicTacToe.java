@@ -7,6 +7,10 @@ public class TicTacToe {
     }
 
     public Token.Type print(int position) {
-        return Token.Type.CROSS;
+        if (position == 0) {
+            return Token.Type.CROSS;
+        } else {
+            return Token.Type.CIRCLE;
+        }
     }
 }
