@@ -6,11 +6,15 @@ public class TicTacToe {
         return true;
     }
 
-    public Token.Type print(int position) {
-        if (position == 0) {
+    public Token.Type print(int[][] position) {
+        if (position[0][0] == 0) {
             return Token.Type.CROSS;
         } else {
             return Token.Type.CIRCLE;
         }
+    }
+
+    public boolean checkPosition(int[][] position) {
+        return true;
     }
 }
