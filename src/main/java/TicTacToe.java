@@ -1,6 +1,4 @@
-/**
- * Created by sergi.castillo on 8/3/17.
- */
+
 public class TicTacToe {
 
     boolean[][] isFree = new boolean[3][3];
@@ -19,6 +17,8 @@ public class TicTacToe {
     }
 
     public Token.Type print(int x, int y) {
+        isFree[x][y] = false;
+
         if (x == 0 && y == 0) {
             return Token.Type.CROSS;
         } else {
