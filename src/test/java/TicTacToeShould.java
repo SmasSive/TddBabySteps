@@ -17,4 +17,14 @@ public class TicTacToeShould {
         assertThat(result, is(Boolean.TRUE));
 
     }
+
+    @Test
+    public void print_first_movement() throws Exception {
+        TicTacToe ticTacToe = new TicTacToe();
+
+        Token.Type token = ticTacToe.print(0);
+
+        assertThat(token, is(Token.Type.CROSS));
+
+    }
 }

@@ -5,4 +5,8 @@ public class TicTacToe {
     public boolean print() {
         return true;
     }
+
+    public Token.Type print(int position) {
+        return Token.Type.CROSS;
+    }
 }
