@@ -14,7 +14,7 @@ public class TicTacToe {
         }
     }
 
-    public boolean checkPosition(int[][] position) {
+    public boolean checkPosition(int x, int y) {
         return true;
     }
 }

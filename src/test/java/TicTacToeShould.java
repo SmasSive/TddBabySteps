@@ -45,8 +45,9 @@ public class TicTacToeShould {
     @Test
     public void check_position() throws Exception {
         TicTacToe ticTacToe = new TicTacToe();
-        int[][] position = new int[1][1];
-        boolean check = ticTacToe.checkPosition(position);
+        int x = 0;
+        int y = 0;
+        boolean check = ticTacToe.checkPosition(x,y);
         assertThat(check, is(true));
 
     }
