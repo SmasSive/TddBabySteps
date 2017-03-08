@@ -51,4 +51,15 @@ public class TicTacToeShould {
         assertThat(check, is(true));
 
     }
+
+    @Test
+    public void fail_after_fist_movement() throws Exception {
+        TicTacToe ticTacToe = new TicTacToe();
+
+        ticTacToe.print(0,0);
+        boolean check = ticTacToe.checkPosition(0,0);
+        assertThat(check, is(false));
+
+
+    }
 }
